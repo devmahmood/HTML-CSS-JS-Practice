@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double Range Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="values">
+        <span id="range1">0</span>
+        <span>&dash; </span>
+        <span id="range2">100</span>
+      </div>
+      <div class="container">
+        <div class="slider-track"></div>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="30"
+          class="slider"
+          id="slider-1"
+          oninput="slideOne()"
+          title="Minimum value slider"
+          aria-label="Minimum value slider"
+        />
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="70"
+          class="slider"
+          id="slider-2"
+          oninput="slideTwo()"
+          title="Maximum value slider"
+          aria-label="Maximum value slider"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
